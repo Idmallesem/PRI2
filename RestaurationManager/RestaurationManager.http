@@ -1,0 +1,6 @@
+@RestaurationManager_HostAddress = http://localhost:5151
+
+GET {{RestaurationManager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
