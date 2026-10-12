@@ -6,16 +6,16 @@ permissions:
       id-token: write
       contents: read
 
-environement : Production
 env:
   AZURE_WEBAPP_NAME: RestaurationManager   # Set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # Set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '10.0.x'           # Set this to the dot net version to use
 
 jobs:
+  JOB-ID:
+    environment: Production
   build:
     runs-on: ubuntu-latest
-
     steps:
       # Check out the repo
       - uses: actions/checkout@main
