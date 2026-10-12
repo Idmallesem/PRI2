@@ -12,10 +12,9 @@ env:
   DOTNET_VERSION: '10.0.x'           # Set this to the dot net version to use
 
 jobs:
-  JOB-ID:
-    environment: Production
   build:
     runs-on: ubuntu-latest
+    environment: Production
     steps:
       # Check out the repo
       - uses: actions/checkout@main
